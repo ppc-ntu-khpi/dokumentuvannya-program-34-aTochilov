@@ -1,9 +1,18 @@
 package test;
 
 import domain.*;
-
+/**
+ * Вычисление и отображение результатов.
+ * Содержит реализацию статического метода main().
+ * @author Andrei
+ */
 public class EmployeesTest {
 
+    /**
+     * Выполняется при запуске программы.
+     * Результаты вычислений выводятся на экран.
+     * @param args Выполняется при запуске программы.
+     */
     public static void main(String args[]) {
 
         String[] skills = {"Microsoft Word", "TeX", "OpenOffice", "Markdown"};
