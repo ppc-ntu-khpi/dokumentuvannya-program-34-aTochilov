@@ -1,6 +1,14 @@
 package domain;
+/**
+ * Содержит реализацию методов
+ * @author Andrei
+ */
 public class Employee {
 
+    /**
+     * Выводит значение
+     * @return Данные о работнике
+     */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
@@ -14,6 +22,13 @@ public class Employee {
 
    // private static int employeesCount = 0;
 
+    /**
+     * Устанавливает значения полей
+     * @param name
+     * @param jobTitle
+     * @param level
+     * @param dept
+     */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -30,6 +45,10 @@ public class Employee {
         this.dept = dept;
     }
 
+    /**
+     * Конструктор по умолчанию
+     * Устанавливает значение поля ID
+     */
     public Employee() {
         ID = (int)(Math.random()*1000);
 //        if (ID > 10000) {
@@ -37,18 +56,34 @@ public class Employee {
 //        }
     }
 
+    /**
+     * Устанавливает профессию сотрудника
+     * @param job 
+     */
     public void setJobTitle(String job) {
         jobTitle = job;
     }
 
+    /**
+     * Возвращает профессию сотрудника
+     * @return должность
+     */
     public String getJobTitle() {
         return jobTitle;
     }
 
+    /**
+     * Возвращает имя сотрудника
+     * @return Имя
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Устанавливет значение поля level
+     * @param level 
+     */
     public void setLevel(int level) {
         switch (level) {
             case 1:
@@ -61,18 +96,34 @@ public class Employee {
         }
     }
 
+    /**
+     * Возвращает значение поля level
+     * @return Уровень
+     */
     public int getLevel() {
         return level;
     }
 
+    /**
+     * Возвращает отдел, в котором работает сотрудник
+     * @return Отдел
+     */
     public String getDept() {
         return dept;
     }
 
+    /**
+     * Устанавливает отдел, в котором работает сотрудник
+     * @param dept 
+     */
     public void setDept(String dept) {
         this.dept = dept;
     }
 
+    /**
+     * Устанавливает имя сотрудника
+     * @param name 
+     */
     public void setName(String name) {
 //        boolean correctName = true;
 //        for (int i = 0; i < name.length(); i++) {
